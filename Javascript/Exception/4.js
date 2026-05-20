@@ -7,9 +7,7 @@ try{
         throw new Error(
         "Marks cannot exceed 100"
         );
-
     }
-
 }
 
 catch(error){
