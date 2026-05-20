@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Product Price Calculator</h2>
+
+<p id="result"></p>
+
+<script>
+// Product object
+let product = {
+    name: "Shoes",
+    price: 1000,
+    discount: 20, // in %
+    details: {
+        brand: "Nike"
+    }
+};
+
+// Arithmetic (calculate discount)
+let discountAmount = (product.price * product.discount) / 100;
+let finalPrice = product.price - discountAmount;
+
+// Comparison
+let isExpensive = finalPrice > 500;
+
+// Logical
+let canBuy = isExpensive && product.discount > 10;
+
+// Optional chaining (safe access)
+let brandName = product.details?.brand;
+
+// Nullish coalescing (default value)
+let category = product.category ?? "General";
+
+// Output
+document.getElementById("result").innerHTML =
+    "Original Price: " + product.price + "<br>" +
+    "Discount: " + product.discount + "%<br>" +
+    "Final Price: " + finalPrice + "<br>" +
+    "Is Expensive (>500): " + isExpensive + "<br>" +
+    "Can Buy (logic): " + canBuy + "<br>" +
+    "Brand: " + brandName + "<br>" +
+    "Category: " + category;
+
+</script>
+
+</body>
+</html>
