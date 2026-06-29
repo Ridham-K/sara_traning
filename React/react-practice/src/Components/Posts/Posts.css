@@ -1,0 +1,42 @@
+h1 {
+  text-align: center;
+  color: black;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.fetch-btn,
+.add-btn,
+.delete-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+
+.fetch-btn {
+  background-color: blue;
+}
+
+.add-btn {
+  background-color: green;
+}
+
+.delete-btn {
+  background-color: red;
+}
+
+body {
+  background-color: lightblue;
+}
+
+th,
+td {
+  color: black;
+  font-weight: bold;
+}

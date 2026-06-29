@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+let user = {
+    name: "Sara",
+    age: 22
+};
+
+localStorage.setItem("user", JSON.stringify(user));
+
+let data = JSON.parse(localStorage.getItem("user"));
+
+console.log(data);
+</script>
+</body>
+</html>

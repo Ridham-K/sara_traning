@@ -1,0 +1,10 @@
+.main-content {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  align-items: flex-start;
+}
+
+.height{
+  height: 50px;
+}
