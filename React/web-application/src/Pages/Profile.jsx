@@ -9,7 +9,6 @@ function Profile() {
       setUser(data);
     }
   }, []);
-
   return (
     <>
       <h1>Profile</h1>
