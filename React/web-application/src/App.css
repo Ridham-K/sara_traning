@@ -1,158 +1,235 @@
-/* Reset */
+/* ===========================
+   Global
+=========================== */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Segoe UI", sans-serif;
 }
 
 body {
-  background: #f4f6f9;
+  background: #f5f7fb;
+  color: #333;
 }
 
-/* Login Page */
+/* ===========================
+   Login
+=========================== */
 
 .login {
-  width: 380px;
-  margin: 100px auto;
-  background: white;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  width: 420px;
+  margin: 70px auto;
+  background: #ffffff;
+  padding: 35px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
 
 .login h2 {
   text-align: center;
+  color: #4f7df3;
   margin-bottom: 25px;
-  color: #333;
 }
 
 .login input {
   width: 100%;
   padding: 12px;
   margin-bottom: 18px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
+  border: 1px solid #d9e2ef;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.login input:focus {
+  outline: none;
+  border-color: #4f7df3;
+  box-shadow: 0 0 5px rgba(79, 125, 243, 0.2);
 }
 
 .login button {
   width: 100%;
   padding: 12px;
-  background: #1976d2;
+  background: #4f7df3;
   color: white;
   border: none;
-  border-radius: 6px;
+  border-radius: 8px;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 .login button:hover {
-  background: #1259a8;
+  background: #3967db;
 }
 
-/* Header */
+.login p {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.login a {
+  color: #4f7df3;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.login a:hover {
+  text-decoration: underline;
+}
+
+/* ===========================
+   Header
+=========================== */
 
 header {
   height: 70px;
-  background: #1976d2;
-  color: white;
+  background: #eaf2ff;
+  color: #2d4f8d;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 30px;
+  border-bottom: 1px solid #d8e4ff;
 }
 
 header button {
-  background: white;
-  color: #1976d2;
-  border: none;
+  background: #4f7df3;
+  color: white;
   padding: 10px 18px;
-  border-radius: 5px;
+  border: none;
+  border-radius: 8px;
   cursor: pointer;
-  font-weight: bold;
+  transition: 0.3s;
 }
 
-/* Layout */
+header button:hover {
+  background: #3967db;
+}
+
+/* ===========================
+   Layout
+=========================== */
 
 .container {
   display: flex;
   min-height: calc(100vh - 130px);
 }
 
-/* Sidebar */
+/* ===========================
+   Sidebar
+=========================== */
 
 aside {
   width: 240px;
-  background: #263238;
-  padding-top: 25px;
+  background: #ffffff;
+  border-right: 1px solid #e2e8f0;
+  padding-top: 20px;
 }
 
 aside a {
   display: block;
-  color: white;
-  text-decoration: none;
   padding: 15px 25px;
+  color: #555;
+  text-decoration: none;
   transition: 0.3s;
+  border-radius: 8px;
+  margin: 5px 12px;
 }
 
 aside a:hover {
-  background: #37474f;
+  background: #eef4ff;
+  color: #4f7df3;
 }
 
 aside .active {
-  background: #1976d2;
+  background: #dce9ff;
+  color: #2d5bd1;
+  font-weight: bold;
 }
 
-/* Main Content */
+/* ===========================
+   Content
+=========================== */
 
 .content {
   flex: 1;
   padding: 30px;
-  background: #f4f6f9;
 }
 
-/* Footer */
+.content h1 {
+  color: #4f7df3;
+}
+
+/* ===========================
+   Footer
+=========================== */
 
 footer {
   height: 60px;
-  background: #1976d2;
-  color: white;
+  background: #eaf2ff;
+  color: #2d4f8d;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-top: 1px solid #d8e4ff;
 }
 
-/* Cards */
+/* ===========================
+   Cards
+=========================== */
 
 .card {
   background: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0px 3px 8px rgba(0,0,0,.15);
+  padding: 25px;
   margin-top: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
 }
 
-/* Forms */
+.card h2 {
+  color: #4f7df3;
+  margin-bottom: 12px;
+}
+
+.card p {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* ===========================
+   Forms
+=========================== */
 
 input {
   width: 100%;
-  padding: 10px;
+  padding: 11px;
   margin-top: 8px;
   margin-bottom: 18px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  border: 1px solid #d9e2ef;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #4f7df3;
+  box-shadow: 0 0 5px rgba(79, 125, 243, 0.2);
 }
 
 button {
   padding: 10px 18px;
-  background: #1976d2;
+  background: #4f7df3;
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 button:hover {
-  background: #1565c0;
+  background: #3967db;
 }
 
 h1 {

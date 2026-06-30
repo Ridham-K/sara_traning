@@ -8,14 +8,14 @@ function Header() {
 
     localStorage.removeItem("user");
 
-    navigate("/");
+    navigate("/", { replace: true });
   };
 
   return (
 
     <header>
 
-      <h2>Admin Dashboard</h2>
+      <h2>Dashboard</h2>
 
       <button onClick={logout}>
         Logout

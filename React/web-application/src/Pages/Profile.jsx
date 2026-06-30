@@ -16,6 +16,7 @@ function Profile() {
       <div className="card">
         <p><strong>Username:</strong> {user.username}</p>
         <p><strong>Password:</strong> {user.password}</p>
+        <p><strong>Email Address:</strong> {user.email}</p>
       </div>
     </>
   );
